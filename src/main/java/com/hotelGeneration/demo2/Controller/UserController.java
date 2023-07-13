@@ -1,4 +1,4 @@
-package com.hotelGeneration.Controller;
+package com.hotelGeneration.demo2.Controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hotel.Generation.Entity.User;
-import com.hotelGeneration.Service.UserService;
+import com.hotelGeneration.demo2.Entity.User;
+import com.hotelGeneration.demo2.Service.UserService;
 
 /*
  *El controller es quien lleva todo el peso referente a las colicitudes HTTP. Aqui sucede la manipulacion de los metodos HTTP (GET, POST, PUT, DELETE)
@@ -39,6 +39,6 @@ public class UserController {
 	//Metodos HTTP
 	@GetMapping
 	public List <User> getUsuarios(){
-		return userService.readUsuarios();
+		return userService.leerUsarios();
 	}
 }
